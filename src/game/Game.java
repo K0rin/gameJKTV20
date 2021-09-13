@@ -23,7 +23,7 @@ public class Game {
         Scanner scanner = new Scanner(System.in);
         int number=random.nextInt(9 - 0 + 1) + 0;
         System.out.println("Программа запомнила число от нуля до 10");
-        for(int i = 0; i<3; i++){
+        while(true){
             int userNumber = scanner.nextInt();
             if(number == userNumber){
                 System.out.println("ты выйграл");
@@ -33,6 +33,7 @@ public class Game {
                     System.out.println("неправильно. Попробуй еще раз");
                 }else{
                     System.out.println("ты проиграл");
+                    break;
                 }
                 attempt++;
             }
