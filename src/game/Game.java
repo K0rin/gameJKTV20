@@ -29,5 +29,5 @@ public class Game {
             System.out.println(":(, неправильно. Задуманное число: "+number);
         }
     }
-
-    
+   
+}    
